@@ -1,0 +1,294 @@
+
+/* @import '../../.cache/wal/colors-waybar.css'; */
+
+* {
+    font-family: "JetBrainsMonoNerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0.0);
+    border-bottom: 0px solid #ffffff;
+    /* color: #FFFFFF; */
+    /* background: transparent; */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces {
+    margin: 2px 1px 3px 1px;
+    padding: 0px 1px;
+    border-radius: 15px;
+    border: 2px solid yellow;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 2px solid yellow;
+    color: yellow;
+    background: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    color: black;
+    background: yellow;
+    border-radius: 15px;
+    min-width: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    color: yellow;
+    background: yellow;
+    border-radius: 15px;
+    opacity:0.7;
+}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+
+tooltip {
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    opacity:0.8;
+    padding:20px;
+    margin:0px;
+}
+
+tooltip label {
+    color: yellow;
+}
+
+/* -----------------------------------------------------
+ * Window
+ * ----------------------------------------------------- */
+
+#window {
+    color: black;
+    background: yellow;
+    margin: 5px 15px 5px 0px;
+    padding: 2px 10px 0px 10px;
+    border-radius: 12px;
+    border: 0px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+window#waybar.empty #window {
+    background-color:transparent;
+}
+
+/* -----------------------------------------------------
+ * Taskbar
+ * ----------------------------------------------------- */
+
+#taskbar {
+    background: @backgroundlight;
+    margin: 3px 15px 3px 0px;
+    padding:0px;
+    border-radius: 15px;
+    font-weight: normal;
+    font-style: normal;
+    opacity:0.8;
+    border: 3px solid @backgroundlight;
+}
+
+#taskbar button {
+    margin:0;
+    border-radius: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+/* -----------------------------------------------------
+ * Modules
+ * ----------------------------------------------------- */
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#custom-capture_area {
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    padding: 2px 8px 2px 10px;
+    margin: 3px 15px 3px 0px; 
+    border:3px solid black;   
+}
+
+#custom-lock_screen {
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    padding: 2px 12px 2px 12px;
+    margin: 3px 15px 3px 0px; 
+    border:3px solid black;   
+}
+
+#custom-logout {
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    padding: 2px 6px 2px 10px;
+    margin: 3px 15px 3px 0px; 
+    border:3px solid black;   
+}
+
+/* -----------------------------------------------------
+ * Idle Inhibator
+ * ----------------------------------------------------- */
+
+#idle_inhibitor {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+    color: @iconcolor;
+}
+
+#idle_inhibitor.activated {
+    background-color: #dc2f2f;
+    font-size: 16px;
+    color:#ffffff;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 5px 15px 5px 0px;
+    opacity:0.8;    
+}
+
+/* -----------------------------------------------------
+ * Custom Modules
+ * ----------------------------------------------------- */
+
+#custom-appmenu, #custom-appmenuwlr {
+    background-color: @backgrounddark;
+    font-size: 16px;
+    color: @textcolor1;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    margin: 3px 15px 3px 14px;
+    opacity:0.8;
+    border:3px solid @bordercolor;
+}
+
+/* -----------------------------------------------------
+ * Custom Exit
+ * ----------------------------------------------------- */
+
+#custom-exit {
+    margin: 0px 20px 0px 0px;
+    padding:0px;
+    font-size:20px;
+    color: @iconcolor;
+}
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+
+#clock {
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+    margin: 3px 15px 3px 0px;
+    /* opacity:0.8; */
+    border:3px solid black;   
+}
+
+/* -----------------------------------------------------
+ * Pulseaudio
+ * ----------------------------------------------------- */
+
+#pulseaudio {
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 5px 15px 5px 0px;
+}
+
+#pulseaudio.muted {
+    background-color: black;
+    color: orange;
+}
+
+/* -----------------------------------------------------
+ * Bluetooth
+ * ----------------------------------------------------- */
+
+#bluetooth, #bluetooth.on, #bluetooth.connected {
+    background-color: @backgroundlight;
+    font-size: 16px;
+    color: @textcolor2;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 5px 15px 5px 0px;
+    opacity:0.8;
+}
+
+#bluetooth.off {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* -----------------------------------------------------
+ * Tray
+ * ----------------------------------------------------- */
+
+#tray {
+    padding: 2px 10px 0px 10px;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    margin: 5px 15px 5px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+   -gtk-icon-effect: highlight;
+}
+
+
+#temperature {
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 5px 15px 5px 0px;
+}

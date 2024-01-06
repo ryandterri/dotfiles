@@ -1,0 +1,151 @@
+{
+   "checksum": "8f5572731a2704a12ca91f5b0641e7e4",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13348114982868806",
+               "date_last_used": "13348811034354373",
+               "guid": "3659bd24-49a1-4d0b-9d64-1fc48694503b",
+               "id": "5",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Chase",
+               "type": "url",
+               "url": "https://secure.chase.com/web/auth/dashboard#/dashboard/index/index"
+            }, {
+               "date_added": "13348115419973080",
+               "date_last_used": "13348115454549206",
+               "guid": "ae3b6851-1674-49df-8851-25e20a4d6631",
+               "id": "7",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Discover Card",
+               "type": "url",
+               "url": "https://portal.discover.com/customersvcs/universalLogin/ac_main"
+            }, {
+               "date_added": "13348116027992311",
+               "date_last_used": "0",
+               "guid": "901105bd-c0f4-42e9-8639-13bec7a600a8",
+               "id": "8",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Google Store Financing",
+               "type": "url",
+               "url": "https://google.syf.com/accounts/login/?token=eyJraWQiOiIyMTZiMTQzMC1mOTc2LTQ1NTktYjRhZi0yMzc3OWExODdjM2YiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJwMHNmbERkMGpZVWNFdVpOOUlydkNwNk1WQWF5QmlkbSIsImludGVyYWN0aW9uSWQiOiJkZjU0ZDRlZC0yMmQ0LTQ0M2MtYjhiYi1hZjlmZDg0YTg3ODAiLCJyZXR1cm5UbyI6Imh0dHBzOlwvXC93d3cuc3luY2hyb255LmNvbVwvYWNjb3VudHNcLz9jbGllbnQ9Z29vZ2xlIiwiaXNzIjoiYXV0aC5zeWYuY29tIiwiZXhwIjoxNzAzNjQyNDU0LCJpYXQiOjE3MDM2NDI0MjQsImp0aSI6IjIzY2MwMTM1LTA2ZjYtNGM2Mi1hMTkwLTExN2VhMjliZTEyYSJ9.tEe5qmFEE2r0xzVnbu2rrBJYERxlUKUkr27cCHxGheFsR4P7Qsjv07kIAPbtNKBbDgB-n1MQ78MPNuZ2mYqZ5U9gOVHNSUHjGif0uyFteDenyQL-oEZnWRtfRzt-sAhrifd1Qrtb2-fwjX3nKaeCQjaZFOcsvQzu65Cpou4zVAQFSP4eGdaqEBQxjQdcvbCpXpof2vz_eCPWIqf4pE_tKUgnoRXjk8PxgZn-QieK9Es1w43aZJii6O-JnlRBdN1EYCjJbW1OSSP4s_M0kRafWjmOimDl6LkfuMSX2oHxHAkleIFKnYUtj1SuO8S9LD6AXJP_87uPC0HAYC-ZjKulcA&ui_locales=en"
+            } ],
+            "date_added": "13348115055316449",
+            "date_last_used": "0",
+            "date_modified": "13348125023897266",
+            "guid": "895d255a-32f1-4b09-8681-f7052b051e58",
+            "id": "6",
+            "name": "Bills",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13348129795967687",
+               "date_last_used": "0",
+               "guid": "c2f83591-edf5-4c53-9b0f-19bf393d8729",
+               "id": "10",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "The Rust Programming Language - The Rust Programming Language",
+               "type": "url",
+               "url": "https://doc.rust-lang.org/book/"
+            }, {
+               "date_added": "13348348026892905",
+               "date_last_used": "0",
+               "guid": "3d0dce2b-3cd2-4c2a-9c4e-0e4d1cde7a76",
+               "id": "12",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Vimified - Learn, Practice, and Master Vim. The simplest course to become a Vim expert.",
+               "type": "url",
+               "url": "https://www.vimified.com/chapters"
+            } ],
+            "date_added": "13348129810478703",
+            "date_last_used": "0",
+            "date_modified": "13348531122293645",
+            "guid": "2549877f-4c86-4631-abfc-c4c882065d23",
+            "id": "11",
+            "name": "Dev",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13348531122293645",
+               "date_last_used": "0",
+               "guid": "0f5eeed9-bae7-48bd-abeb-34694b1d7f96",
+               "id": "14",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Roms",
+               "type": "url",
+               "url": "https://www.reddit.com/r/Roms/comments/m59zx3/roms_megathread_40_html_edition_2021/"
+            }, {
+               "date_added": "13348531144701456",
+               "date_last_used": "13348553544725678",
+               "guid": "74829b5c-bf27-49e8-96b9-b87286ae7e1e",
+               "id": "16",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Popular - /r/Roms Megathread",
+               "type": "url",
+               "url": "https://r-roms.github.io/megathread/popular/"
+            } ],
+            "date_added": "13348531140687334",
+            "date_last_used": "0",
+            "date_modified": "13348531144701456",
+            "guid": "4efca3df-5dd5-42fb-8273-ef8d72e01f74",
+            "id": "15",
+            "name": "Games",
+            "type": "folder"
+         }, {
+            "date_added": "13348125023897266",
+            "date_last_used": "13348869242334795",
+            "guid": "18d4e30c-0401-4cf5-b5ff-bb73d7531d20",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         } ],
+         "date_added": "13348012519372445",
+         "date_last_used": "0",
+         "date_modified": "13348551219017694",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13348012519372446",
+         "date_last_used": "0",
+         "date_modified": "13348115055316619",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13348012519372447",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

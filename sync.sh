@@ -1,0 +1,1 @@
+cp -rsf ~/git/dotfiles/. ~

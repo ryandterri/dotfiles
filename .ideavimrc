@@ -1,0 +1,38 @@
+set relativenumber number
+set surround
+set highlightedyank
+set nerdtree
+
+" set <leader> to <space>
+let mapleader = " "
+
+" clipboard shared with system
+clipboard+=unnamedplus
+
+" keep clipboard after pasting in selection
+vnoremap p pgvy
+
+nmap gb <Action>(Back)
+nmap gf <Action>(Forward)
+nmap <leader>u <Action>(FindUsages)
+nmap <leader>a :action FindInPath<CR>
+map <leader>q <action>(CloseContent)
+
+" Tab navigation
+nnoremap <S-l> :tabnext<CR>
+nnoremap <S-h> :tabprev<CR>\
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" Open NERDTree (use q to exit)
+map <leader>x :NERDTreeToggle<CR>
+
+" Comment lines
+map <leader>c <action>(CommentByLineComment)
+
+" Reformat Code
+map <leader>f <action>(ReformatCode)

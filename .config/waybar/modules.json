@@ -1,0 +1,29 @@
+{
+    "hyprland/window": {
+        "rewrite": {
+            "(.*) - Brave": "$1",
+            "(.*) - Chromium": "$1",
+            "(.*) - Brave Search": "$1",
+            "(.*) - Outlook": "$1",
+            "(.*) Microsoft Teams": "$1"
+        },
+        "separate-outputs": true
+    },
+    "custom/capture_area": {
+        "format": " ",
+        "on-click": "sleep 0.1 && ~/Scripts/capture_area.sh",
+        "tooltip": false
+
+   },
+   "custom/lock_screen": {
+       "format": "",
+       "on-click": "swaylock",
+       "tooltip": false
+   },
+   "custom/logout": {
+       "format": " ",
+       "on-click": "hyprctl dispatch exit",
+       "tooltip": false
+   }
+
+}
