@@ -61,7 +61,7 @@ imagebox {
     padding:                     20px;
     background-color:            transparent;
     /* background-image:            url("~/.config/rofi/images/g.png", height); */
-    background-image:            url("~/Pictures/by.jpg", height);
+    background-image:            url("~/.cache/current_wallpaper.jpg", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }

@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 40, // Waybar height (to be removed for auto height)
+    // "height": 40, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
 
     // Load Modules
@@ -13,7 +13,10 @@
         "tray", 
         "custom/capture_area", 
         "custom/lock_screen", 
-        "custom/logout"
+        // "custom/logout",
+        "custom/wlogout",
+        "custom/wp_prev",
+        "custom/wp_next"
     ],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "temperature", "clock"],

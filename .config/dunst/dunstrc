@@ -1,12 +1,12 @@
-#      _                 _    
-#   __| |_   _ _ __  ___| |_  
-#  / _` | | | | '_ \/ __| __| 
-# | (_| | |_| | | | \__ \ |_  
-#  \__,_|\__,_|_| |_|___/\__| 
-#                             
-#  
-# by Stephan Raabe (2023) 
-# ----------------------------------------------------- 
+#      _                 _
+#   __| |_   _ _ __  ___| |_
+#  / _` | | | | '_ \/ __| __|
+# | (_| | |_| | | | \__ \ |_
+#  \__,_|\__,_|_| |_|___/\__|
+#
+#
+# by Stephan Raabe (2023)
+# -----------------------------------------------------
 
 # See dunst(5) for all configuration options
 
@@ -105,7 +105,7 @@
     frame_width = 3
 
     # Defines color of the frame around the notification window.
-    frame_color = "#fff200"
+    frame_color = "#ffffff"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -211,7 +211,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = breeze
+    icon_theme = Adwaita
     # You can also set multiple icon themes, with the leftmost one being used first.
     # icon_theme = "Adwaita, breeze"
 

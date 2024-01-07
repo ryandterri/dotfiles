@@ -1,5 +1,6 @@
 
-/* @import '../../.cache/wal/colors-waybar.css'; */
+ /*@import '../../.cache/wal/colors-waybar.css'; */
+ @import '../../.cache/wal/colors-waybar.css';
 
 * {
     font-family: "JetBrainsMonoNerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -24,7 +25,7 @@ window#waybar {
     margin: 2px 1px 3px 1px;
     padding: 0px 1px;
     border-radius: 15px;
-    border: 2px solid yellow;
+    border: 2px solid @color6;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
@@ -34,23 +35,23 @@ window#waybar {
     padding: 0px 5px;
     margin: 4px 3px;
     border-radius: 15px;
-    border: 2px solid yellow;
-    color: yellow;
-    background: black;
+    border: 2px solid @color6;
+    color: @color6;
+    background: @color0;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    color: black;
-    background: yellow;
+    color: @color0;
+    background: @color6;
     border-radius: 15px;
     min-width: 50px;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button:hover {
-    color: yellow;
-    background: yellow;
+    color: @color0;
+    background: @color6;
     border-radius: 15px;
     opacity:0.7;
 }
@@ -91,26 +92,6 @@ window#waybar.empty #window {
     background-color:transparent;
 }
 
-/* -----------------------------------------------------
- * Taskbar
- * ----------------------------------------------------- */
-
-#taskbar {
-    background: @backgroundlight;
-    margin: 3px 15px 3px 0px;
-    padding:0px;
-    border-radius: 15px;
-    font-weight: normal;
-    font-style: normal;
-    opacity:0.8;
-    border: 3px solid @backgroundlight;
-}
-
-#taskbar button {
-    margin:0;
-    border-radius: 15px;
-    padding: 0px 5px 0px 5px;
-}
 
 /* -----------------------------------------------------
  * Modules
@@ -125,25 +106,36 @@ window#waybar.empty #window {
 }
 
 #custom-capture_area {
-    background-color: yellow;
+    background-color: @color6;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: @color0;
     border-radius: 15px;
     padding: 2px 8px 2px 10px;
     margin: 3px 15px 3px 0px; 
-    border:3px solid black;   
+    border:3px solid @color6;
 }
 
 #custom-lock_screen {
-    background-color: yellow;
+    background-color: @color6;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: @color0;
     border-radius: 15px;
     padding: 2px 12px 2px 12px;
     margin: 3px 15px 3px 0px; 
-    border:3px solid black;   
+    border:3px solid @color6;
+}
+
+#custom-wlogout {
+    background-color: @color6;
+    font-size: 16px;
+    font-weight: bold;
+    color: @color0;
+    border-radius: 15px;
+    padding: 2px 14px 2px 10px;
+    margin: 3px 15px 3px 0px;
+    border:3px solid @color6;
 }
 
 #custom-logout {
@@ -152,10 +144,32 @@ window#waybar.empty #window {
     font-weight: bold;
     color: black;
     border-radius: 15px;
-    padding: 2px 6px 2px 10px;
+    padding: 2px 10px 2px 10px;
     margin: 3px 15px 3px 0px; 
-    border:3px solid black;   
+    /*border:3px solid black;   */
 }
+
+ #custom-wp_prev {
+     background-color: @color6;
+     font-size: 16px;
+     font-weight: bold;
+     color: @color0;
+     border-radius: 15px;
+     padding: 2px 15px 2px 10px;
+     margin: 3px 15px 3px 0px;
+     border:3px solid @color6;
+ }
+
+ #custom-wp_next {
+     background-color: @color6;
+     font-size: 16px;
+     font-weight: bold;
+     color: @color0;
+     border-radius: 15px;
+     padding: 2px 15px 2px 10px;
+     margin: 3px 15px 3px 0px;
+     border:3px solid @color6;
+ }
 
 /* -----------------------------------------------------
  * Idle Inhibator
@@ -210,15 +224,15 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: yellow;
+    background-color: @color6;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: @color0;
     border-radius: 15px;
     padding: 2px 10px 2px 10px;
     margin: 3px 15px 3px 0px;
     /* opacity:0.8; */
-    border:3px solid black;   
+    border:3px solid @color6;
 }
 
 /* -----------------------------------------------------
@@ -226,10 +240,10 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    background-color: yellow;
+    background-color: @color6;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: @color0;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -245,9 +259,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #bluetooth, #bluetooth.on, #bluetooth.connected {
-    background-color: @backgroundlight;
+    background-color: @background;
     font-size: 16px;
-    color: @textcolor2;
+    color: @color6;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -266,10 +280,11 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #tray {
-    padding: 2px 10px 0px 10px;
-    border: 2px solid yellow;
+    background-color: @color0;
+    padding: 2px 10px 2px 10px;
+    border: 2px solid @color6;
     border-radius: 15px;
-    margin: 5px 15px 5px 0px;
+    margin: 5px 15px 5px 20px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -284,10 +299,10 @@ window#waybar.empty #window {
 
 
 #temperature {
-    background-color: yellow;
+    background-color: @color6;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: @color0;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
