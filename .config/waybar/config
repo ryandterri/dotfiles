@@ -11,7 +11,6 @@
     // Choose the order of the modules
     "modules-left": [
         "tray", 
-        "hyprland/window", 
         "custom/capture_area", 
         "custom/lock_screen", 
         "custom/logout"

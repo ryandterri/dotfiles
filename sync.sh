@@ -1,1 +1,1 @@
-cp -rsf ~/git/dotfiles/. ~
+cp -r .config/hypr/* ~/.config/hypr/

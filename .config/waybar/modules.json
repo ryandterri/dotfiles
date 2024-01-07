@@ -11,7 +11,7 @@
     },
     "custom/capture_area": {
         "format": " ",
-        "on-click": "sleep 0.1 && ~/Scripts/capture_area.sh",
+        "on-click": "sleep 0.1 && ~/scripts/capture_area.sh",
         "tooltip": false
 
    },
