@@ -11,10 +11,10 @@
     // Choose the order of the modules
     "modules-left": [
         "tray", 
-        "custom/capture_area", 
-        "custom/lock_screen", 
-        // "custom/logout",
         "custom/wlogout",
+        "custom/capture_area", 
+        // "custom/lock_screen", 
+        // "custom/logout",
         "custom/wp_prev",
         "custom/wp_next"
     ],

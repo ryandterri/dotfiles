@@ -6,3 +6,4 @@ cp -rsf ~/git/dotfiles/.config/rofi/* ~/.config/rofi/
 cp -rsf ~/git/dotfiles/.config/swaylock/* ~/.config/swaylock/
 cp -rsf ~/git/dotfiles/.config/wal/* ~/.config/wal/
 cp -rsf ~/git/dotfiles/.config/waybar/* ~/.config/waybar/
+cp -rsf ~/git/dotfiles/.bashrc ~/.bashrc
