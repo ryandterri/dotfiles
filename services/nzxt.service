@@ -1,0 +1,8 @@
+[Unit]
+Description=NZXT gif loader
+
+[Service]
+ExecStart=/usr/local/bin/nzxt_setup
+
+[Install]
+WantedBy=multi-user.target
