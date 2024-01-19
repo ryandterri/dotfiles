@@ -5,4 +5,4 @@ Description=NZXT gif loader
 ExecStart=/usr/local/bin/nzxt_setup
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

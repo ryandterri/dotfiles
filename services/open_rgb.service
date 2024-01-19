@@ -1,0 +1,8 @@
+[Unit]
+Description=Set RGB colors
+
+[Service]
+ExecStart=/usr/local/bin/set_rgb
+
+[Install]
+WantedBy=default.target

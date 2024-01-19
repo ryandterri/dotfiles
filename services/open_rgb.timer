@@ -1,0 +1,8 @@
+[Unit]
+Description=Set rgb color
+
+[Timer]
+OnBootSec=20
+
+[Install]
+WantedBy=timers.target

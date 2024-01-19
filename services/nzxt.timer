@@ -1,0 +1,8 @@
+[Unit]
+Description=NZXT logo swap
+
+[Timer]
+OnBootSec=20
+
+[Install]
+WantedBy=timers.target
