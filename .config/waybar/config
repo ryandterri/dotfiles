@@ -11,14 +11,14 @@
 
 
         // Choose the order of the modules
-        "modules-left": [
-            "tray", 
+        "modules-left": [ "tray", 
             "custom/wlogout",
             "custom/capture_area", 
             // "custom/lock_screen", 
             // "custom/logout",
             "custom/wp_prev",
-            "custom/wp_next"
+            "custom/wp_next",
+            "idle_inhibitor"
         ],
         "modules-center": ["hyprland/workspaces"],
         "modules-right": ["pulseaudio", "temperature", "clock"],
@@ -28,6 +28,13 @@
         "tray": {
             // "icon-size": 21,
             "spacing": 5 
+        },
+        "idle_inhibitor": {
+            "format": "{icon}",
+            "format-icons": {
+                "activated": "no idle",
+                "deactivated": "allow idle"
+            }
         },
         "clock": {
             // "timezone": "America/Chicago",
