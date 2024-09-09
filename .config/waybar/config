@@ -11,7 +11,10 @@
 
 
         // Choose the order of the modules
-        "modules-left": [ "tray", 
+        "modules-left": [ 
+            "tray", 
+            // "wlr/taskbar",
+            // "hyprland/window",
             "custom/wlogout",
             "custom/capture_area", 
             // "custom/lock_screen", 
@@ -28,6 +31,12 @@
         "tray": {
             // "icon-size": 21,
             "spacing": 5 
+        },
+        "wlr/taskbar": {
+          "format": "{icon}",
+          "icon-size": "20",
+          "on-lick": "activate",
+          "tooltip-format": "Go to {title}"
         },
         "idle_inhibitor": {
             "format": "{icon}",

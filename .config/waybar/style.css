@@ -8,10 +8,11 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.0);
+    /*background-color: rgba(0, 0, 0, 0.0);*/
     border-bottom: 0px solid #ffffff;
-    /* color: #FFFFFF; */ 
-    /* background: transparent; */
+    color: #FFFFFF;  
+    background: transparent; 
+     /*margin 10px;*/
     transition-property: background-color;
     transition-duration: .5s;
 }
