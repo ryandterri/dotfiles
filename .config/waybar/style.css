@@ -2,58 +2,55 @@
 @import '../../.cache/wal/colors-waybar.css';
 
 * {
-    font-family: "JetBrainsMonoNerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    border: none;
-    border-radius: 0px;
+  font-family: "JetBrainsMonoNerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 0px;
 }
 
 window#waybar {
-    /*background-color: rgba(0, 0, 0, 0.0);*/
-    border-bottom: 0px solid #ffffff;
-    color: #FFFFFF;  
-    background: transparent; 
-     /*margin 10px;*/
-    transition-property: background-color;
-    transition-duration: .5s;
+  background: transparent; 
+  transition-property: background-color;
+  transition-duration: .5s;
 }
+
+.modules-right, .modules-left, .modules-center {
+  border-bottom: 1px solid @color6;
+  border-radius: 20px;
+  padding: 5px
+}
+
+#taskbar {
+  padding: 5px
+}
+
+#taskbar button {
+  margin-right: 5px
+}
+
 
 /* -----------------------------------------------------
  * Workspaces 
  * ----------------------------------------------------- */
 
 #workspaces {
-    margin: 2px 1px 3px 1px;
-    padding: 0px 1px;
-    border-radius: 15px;
-    border: 2px solid @color6;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 16px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #workspaces button {
-    padding: 2px 10px;
-    margin: 4px 3px;
-    border-radius: 15px;
-    border: 2px solid @color6;
-    color: @color6;
-    background: @color0;
-    transition: all 0.3s ease-in-out;
+  margin: 0px 5px;
+  color: @color0;
+  transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    color: @color0;
-    background: @color6;
-    border-radius: 15px;
-    min-width: 50px;
-    transition: all 0.3s ease-in-out;
+  color: @color6;
+  transition: all 0.3s ease-in-out;
 }
 
 #workspaces button:hover {
-    color: @color0;
-    background: @color6;
-    border-radius: 15px;
-    opacity: 0.7;
+  color: @color6;
+  opacity: 0.7;
 }
 
 /* -----------------------------------------------------
@@ -61,113 +58,42 @@ window#waybar {
  * ----------------------------------------------------- */
 
 tooltip {
-    color: @color6;
-    border: 2px solid @color6;
-    border-radius: 10px;
-    opacity: 0.8;
-    padding: 20px;
-    margin: 0px;
+  border: 2px solid @color6;
+  border-radius: 10px;
+  opacity: 0.8;
 }
 
 tooltip label {
-    color: @color6;
+  color: @color6;
 }
 
-/* -----------------------------------------------------
- * Window
- * ----------------------------------------------------- */
-
-#window {
-    color: black;
-    background: yellow;
-    margin: 5px 15px 5px 0px;
-    padding: 2px 10px 0px 10px;
-    border-radius: 12px;
-    border: 0px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-window#waybar.empty #window {
-    background-color: transparent;
-}
-
-/* -----------------------------------------------------
- * Modules
- * ----------------------------------------------------- */
-
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 10px; 
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
 
 #custom-capture_area {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 8px 2px 10px;
-    margin: 3px 15px 3px 0px;
-    border: 3px solid @color6;
-}
-
-#custom-lock_screen {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 12px 2px 12px;
-    margin: 3px 15px 3px 0px;
-    border: 3px solid @color6;
+  font-size: 20px;
+  font-weight: bold;
+  color: @color6;
+  margin: 0px 10px;
 }
 
 #custom-wlogout {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 14px 2px 10px;
-    margin: 3px 15px 3px 0px;
-    border: 3px solid @color6;
-}
-
-#custom-logout {
-    background-color: yellow;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    border-radius: 15px;
-    padding: 2px 10px 2px 10px;
-    margin: 3px 15px 3px 0px;
-    /*border:3px solid black;   */
+  font-size: 20px;
+  font-weight: bold;
+  color: @color6;
+  margin: 0px 10px;
 }
 
 #custom-wp_prev {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 15px 2px 10px;
-    margin: 3px 15px 3px 0px;
-    border: 3px solid @color6;
+  font-size: 20px;
+  font-weight: bold;
+  color: @color6;
+  margin: 0px 10px;
 }
 
 #custom-wp_next {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 15px 2px 10px;
-    margin: 3px 15px 3px 0px;
-    border: 3px solid @color6;
+  font-size: 20px;
+  font-weight: bold;
+  color: @color6;
+  margin: 0px 10px;
 }
 
 /* -----------------------------------------------------
@@ -175,63 +101,27 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #idle_inhibitor {
-    margin-right: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: @iconcolor;
+  margin: 0px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.8;
+  color: @iconcolor;
 }
 
 #idle_inhibitor.activated {
-    background-color: #dc2f2f;
-    font-size: 16px;
-    color: #ffffff;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
-    opacity: 0.8;
+  color: #dc2f2f;
 }
 
-/* -----------------------------------------------------
- * Custom Modules
- * ----------------------------------------------------- */
-
-#custom-appmenu, #custom-appmenuwlr {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 0px 10px 0px 10px;
-    margin: 3px 15px 3px 14px;
-    opacity: 0.8;
-    border: 3px solid @bordercolor;
-}
-
-/* -----------------------------------------------------
- * Custom Exit
- * ----------------------------------------------------- */
-
-#custom-exit {
-    margin: 0px 20px 0px 0px;
-    padding: 0px;
-    font-size: 20px;
-    color: @iconcolor;
-}
 
 /* -----------------------------------------------------
  * Clock
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 10px 2px 10px;
-    margin: 3px 15px 3px 0px;
-    /* opacity:0.8; */
-    border: 3px solid @color6;
+  color: @color6;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 10px;
 }
 
 /* -----------------------------------------------------
@@ -239,70 +129,19 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: @color6;
+  margin: 0px 10px;
 }
 
 #pulseaudio.muted {
-    background-color: black;
-    color: orange;
+  color: orange;
 }
-
-/* -----------------------------------------------------
- * Bluetooth
- * ----------------------------------------------------- */
-
-#bluetooth, #bluetooth.on, #bluetooth.connected {
-    background-color: @background;
-    font-size: 16px;
-    color: @color6;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
-    opacity: 0.8;
-}
-
-#bluetooth.off {
-    background-color: transparent;
-    padding: 0px;
-    margin: 0px;
-}
-
-
-/* -----------------------------------------------------
- * Tray
- * ----------------------------------------------------- */
-
-#tray {
-    background-color: @color0;
-    padding: 2px 10px 2px 10px;
-    border: 2px solid @color6;
-    border-radius: 15px;
-    margin: 5px 15px 5px 15px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-}
-
 
 #temperature {
-    background-color: @color6;
-    font-size: 16px;
-    font-weight: bold;
-    color: @color0;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: @color6;
+  margin: 0px 20px;
 }

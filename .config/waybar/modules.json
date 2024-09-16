@@ -25,7 +25,8 @@
     "tooltip": false
   },
   "custom/wlogout": {
-    "format": "\uF011",
+    "format": "{icon}",
+    "format-icons": "\uF011",
     "on-click": "wlogout",
     "tooltip": false
   },
