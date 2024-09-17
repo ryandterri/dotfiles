@@ -1,5 +1,6 @@
-/*@import '../../.cache/wal/colors-waybar.css'; */
-@import '../../.cache/wal/colors-waybar.css';
+/*@define-color primary #BE9961;*/
+@define-color primary #FFF;
+@define-color secondary #898987;
 
 * {
   font-family: "JetBrainsMonoNerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -14,9 +15,17 @@ window#waybar {
 }
 
 .modules-right, .modules-left, .modules-center {
-  border-bottom: 1px solid @color6;
+  border-bottom: 1px solid @primary;
   border-radius: 20px;
   padding: 5px
+}
+
+.modules-left {
+  margin-left: 10px;
+}
+
+.modules-right {
+  margin-right: 10px; 
 }
 
 #taskbar {
@@ -39,17 +48,17 @@ window#waybar {
 
 #workspaces button {
   margin: 0px 5px;
-  color: @color0;
+  color: @secondary;
   transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-  color: @color6;
+  color: @primary;
   transition: all 0.3s ease-in-out;
 }
 
 #workspaces button:hover {
-  color: @color6;
+  color: @primary;
   opacity: 0.7;
 }
 
@@ -58,41 +67,41 @@ window#waybar {
  * ----------------------------------------------------- */
 
 tooltip {
-  border: 2px solid @color6;
+  border: 2px solid @primary;
   border-radius: 10px;
   opacity: 0.8;
 }
 
 tooltip label {
-  color: @color6;
+  color: @primary;
 }
 
 
 #custom-capture_area {
   font-size: 20px;
   font-weight: bold;
-  color: @color6;
+  color: @primary;
   margin: 0px 10px;
 }
 
 #custom-wlogout {
   font-size: 20px;
   font-weight: bold;
-  color: @color6;
+  color: @primary;
   margin: 0px 10px;
 }
 
 #custom-wp_prev {
   font-size: 20px;
   font-weight: bold;
-  color: @color6;
+  color: @primary;
   margin: 0px 10px;
 }
 
 #custom-wp_next {
   font-size: 20px;
   font-weight: bold;
-  color: @color6;
+  color: @primary;
   margin: 0px 10px;
 }
 
@@ -118,7 +127,7 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #clock {
-  color: @color6;
+  color: @primary;
   font-size: 20px;
   font-weight: bold;
   margin: 0px 10px;
@@ -131,7 +140,7 @@ tooltip label {
 #pulseaudio {
   font-size: 20px;
   font-weight: bold;
-  color: @color6;
+  color: @primary;
   margin: 0px 10px;
 }
 
@@ -142,6 +151,6 @@ tooltip label {
 #temperature {
   font-size: 20px;
   font-weight: bold;
-  color: @color6;
+  color: @primary;
   margin: 0px 20px;
 }
