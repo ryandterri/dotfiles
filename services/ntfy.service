@@ -1,0 +1,9 @@
+[Unit]
+Description=Signal ntfy service
+
+[Service]
+User=ryandterri
+ExecStart=/usr/local/bin/signal_receive
+
+[Install]
+WantedBy=default.target

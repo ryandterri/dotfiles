@@ -11,15 +11,14 @@
 
         // Choose the order of the modules
         "modules-left": [ 
-            "wlr/taskbar",
             "custom/wlogout",
             "custom/capture_area", 
-            "custom/wp_prev",
-            "custom/wp_next",
+            "custom/updates",
             "idle_inhibitor",
+            "wlr/taskbar",
         ],
         "modules-center": ["hyprland/workspaces"],
-        "modules-right": ["pulseaudio", "temperature", "clock"],
+        "modules-right": [ "pulseaudio", "temperature", "clock"],
         "sway/mode": { "format": "<span style=\"italic\">{}</span>" },
         "wlr/taskbar": {
           "format": "{icon}",

@@ -39,5 +39,13 @@
     "format": "\uF04E",
     "on-click": "~/.config/hypr/scripts/wp_next.sh",
     "tooltip": false
+  },
+  "custom/updates": {
+    "format": "  {}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/hypr/scripts/updates.sh",
+    "restart-interval": 1800,
+    "on-click": "kitty sudo pacman -Syu"
   }
 }
