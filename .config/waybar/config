@@ -1,97 +1,105 @@
 [
-    {
-        "layer": "top", // Waybar at top layer
-        "position": "top", // Waybar position (top|bottom|left|right)
-        "output": "DP-1",
-        "spacing": 5, // Gaps between modules (4px)
+  {
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "output": "DP-1",
+    "spacing": 5, // Gaps between modules (4px)
 
-        // Load Modules
-        "include": ["~/.config/waybar/modules.json"],
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
 
+    // Choose the order of the modules
+    "modules-left": [
+      "group/widgets",
+      "wlr/taskbar"
+    ],
 
-        // Choose the order of the modules
-        "modules-left": [ 
-            "custom/wlogout",
-            "custom/capture_area", 
-            "custom/updates",
-            "idle_inhibitor",
-            "wlr/taskbar",
-        ],
-        "modules-center": ["hyprland/workspaces"],
-        "modules-right": [ "pulseaudio", "temperature", "clock"],
-        "sway/mode": { "format": "<span style=\"italic\">{}</span>" },
-        "wlr/taskbar": {
-          "format": "{icon}",
-          "icon-size": 20,
-          "on-click": "activate",
-          "tooltip-format": "{title}"
-        },
-        "idle_inhibitor": {
-            "format": "{icon}",
-            "format-icons": {
-                "activated": "⏻",
-                "deactivated": "✓"
-            }
-        },
-        "clock": {
-            "timezone": "America/Chicago",
-            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-            "format": "{:%a %I:%M %p}",
-            "format-alt": "{:%Y-%m-%d}"
-            // "interval": 1
-        },
-        "temperature": {
-            "critical-threshold": 80,
-            "format": "{temperatureC}°C {icon}",
-            "format-icons": ["", "", ""]
-        },
-        "pulseaudio": {
-            // "scroll-step": 1, // %, can be a float
-            "format": "{volume}% {icon} {format_source}",
-            "format-bluetooth": "{volume}% {icon} {format_source}",
-            "format-bluetooth-muted": " {icon} {format_source}",
-            "format-muted": " {format_source}",
-            "format-source": "{volume}% ",
-            "format-source-muted": "",
-            "format-icons": {
-                "headphone": "",
-                "hands-free": "",
-                "headset": "",
-                "phone": "",
-                "portable": "",
-                "car": "",
-                "default": ["", "", ""]
-            },
-            "on-click": "pavucontrol"
-        }
+    "modules-center": ["hyprland/workspaces"],
+
+    "modules-right": ["pulseaudio", "temperature", "clock"],
+
+    "group/widgets": {
+      "orientation": "inherit",
+      "modules": [
+        "custom/wlogout",
+        "custom/capture_area",
+        "custom/updates",
+        "idle_inhibitor",
+      ]
     },
-    {
-        "layer": "top", // Waybar at top layer
-        "position": "top", // Waybar position (top|bottom|left|right)
-        "output": "DP-3",
-        "spacing": 5, // Gaps between modules (4px)
 
-        // Load Modules
-        "include": ["~/.config/waybar/modules.json"],
-
-
-        // Choose the order of the modules
-        "modules-left": [ "hyprland/workspaces" ],
-        "modules-center": ["temperature"],
-        "modules-right": ["clock"],
-        "clock": {
-            // "timezone": "America/Chicago",
-            // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-            "format": "{:%a %I:%M %p}",
-            "format-alt": "{:%Y-%m-%d}"
-        },
-        "temperature": {
-            // "thermal-zone": 0,
-            // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-            "critical-threshold": 80,
-            // "format-critical": "{temperatureC}°C {icon}",
-            "format": "{temperatureC}°C {icon}",
-            "format-icons": ["", "", ""]
-        }
+    "sway/mode": { "format": "<span style=\"italic\">{}</span>" },
+    "wlr/taskbar": {
+      "format": "{icon}",
+      "icon-size": 20,
+      "on-click": "activate",
+      "tooltip-format": "{title}"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "⏻",
+        "deactivated": "✓"
+      }
+    },
+    "clock": {
+      "timezone": "America/Chicago",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format": "{:%a %I:%M %p}",
+      "format-alt": "{:%Y-%m-%d}"
+      // "interval": 1
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "format": "{temperatureC}°C {icon}",
+      "format-icons": ["", "", ""]
+    },
+    "pulseaudio": {
+      // "scroll-step": 1, // %, can be a float
+      "format": "{volume}% {icon} {format_source}",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": " {format_source}",
+      "format-source": "{volume}% ",
+      "format-source-muted": "",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol"
     }
+  },
+  {
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "output": "DP-3",
+    "spacing": 5, // Gaps between modules (4px)
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["temperature"],
+    "modules-right": ["clock"],
+    "clock": {
+      // "timezone": "America/Chicago",
+      // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format": "{:%a %I:%M %p}",
+      "format-alt": "{:%Y-%m-%d}"
+    },
+    "temperature": {
+      // "thermal-zone": 0,
+      // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      "critical-threshold": 80,
+      // "format-critical": "{temperatureC}°C {icon}",
+      "format": "{temperatureC}°C {icon}",
+      "format-icons": ["", "", ""]
+    }
+  }
 ]

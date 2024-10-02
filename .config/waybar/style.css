@@ -3,21 +3,26 @@
 @define-color secondary #898987;
 
 * {
-  font-family: "JetBrainsMonoNerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "JetBrainsMonoNerdFont", FontAwesome, Roboto, Helvetica, Arial,
+    sans-serif;
   border: none;
   border-radius: 0px;
 }
 
 window#waybar {
-  background: transparent; 
+  background: rgba(200, 200, 200, 0.5);
   transition-property: background-color;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
-.modules-right, .modules-left, .modules-center {
-  border-bottom: 1px solid @primary;
+.modules-right,
+#widgets,
+#taskbar,
+.modules-center {
   border-radius: 20px;
-  padding: 5px
+  padding: 2px 10px;
+  margin: 5px;
+  background-color: black;
 }
 
 .modules-left {
@@ -25,17 +30,16 @@ window#waybar {
 }
 
 .modules-right {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 #taskbar {
-  padding: 5px
+  padding: 5px;
 }
 
 #taskbar button {
-  margin-right: 5px
+  margin-right: 5px;
 }
-
 
 /* -----------------------------------------------------
  * Workspaces 
@@ -76,7 +80,6 @@ tooltip {
 tooltip label {
   color: @primary;
 }
-
 
 #custom-capture_area {
   font-size: 20px;
@@ -128,7 +131,6 @@ tooltip label {
 #idle_inhibitor.activated {
   color: #dc2f2f;
 }
-
 
 /* -----------------------------------------------------
  * Clock
