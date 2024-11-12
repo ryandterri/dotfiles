@@ -84,9 +84,15 @@
     "include": ["~/.config/waybar/modules.json"],
 
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["group/tall"],
     "modules-center": ["temperature"],
     "modules-right": ["clock"],
+    "group/tall": {
+      "orientation": "inherit",
+      "modules": [
+        "hyprland/workspaces"
+      ]
+    },
     "clock": {
       // "timezone": "America/Chicago",
       // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
